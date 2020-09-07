@@ -1,0 +1,51 @@
+
+body  { 
+    background-color: #ededed; 
+}
+
+.container-form {
+    background-color: #FFF;
+    height: fit-content;
+    border: 1px solid #b3b3b3;
+    box-shadow: 0 0 10px 0px #7e7e7e;
+}
+
+.container-rows {
+    background-color: #f3f5ff;
+    border: 1px solid #cdd4f7;
+}
+
+.container-rows .btn {
+    background-color: transparent; 
+    border: 0; 
+    box-shadow: none;
+}
+
+.disabled {
+    pointer-events: none;
+    touch-action: none;
+}
+
+.add { 
+    color: darkgreen; 
+}
+
+.block { 
+    color: darkblue; 
+}
+
+.delete { 
+    color: darkred; 
+}
+
+.add:hover, .add:focus { 
+    color: yellowgreen; 
+}
+
+.block:hover, .block:focus { 
+    color: royalblue; 
+}
+
+.delete:hover, .delete:focus { 
+    color: orangered; 
+}

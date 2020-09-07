@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- META -->
+
+        <!-- meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,46 +11,56 @@
         <meta name="author" content="William Santos">
         <meta name="generator" content="Visual Studio Code">
 
-        <!-- LIBS / CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/dynamic-form.css">
+        <!-- css -->
+        <link rel="stylesheet" href="libs/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/fontawesome/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="css/index.css">
         
         <title> Dynamic Form Example </title>
     </head>
     <body>
-        <div id="container_form" class="container col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
-            <form id="dynamic_form">
+        <main>
+            <article>
+                <div id="container_form" class="container container-form p-4 my-5">
+
+                    <header>
+                        <h3 class="text-center"> Dynamic Form Example </h3>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <form id="dynamicForm">
+                       
+                                <!-- content lines -->
+                                <div id="containerRows" class="container-rows mt-2 p-3"></div>
                 
-                <!-- HEADER -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <h3 class="text-center"> Dynamic Form Example </h3>
+                                <!-- SUBMIT -->
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-lg btn-primary float-right square-button"> Submit </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div> 
-                
-                <!-- CONTENT -->
-                <div id="container_rows" class="mt-2"> 
-                    
-                </div>
 
-                <!-- SUBMIT -->
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-primary float-right square-button"> Submit </button>
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <span> Made by <a href="https://github.com/williamdsw"> William Santos </a> </span>        
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
+            </article>
+        </main>
 
-        <!-- LIBS / JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/dynamic-form.js"></script>
+        <!-- js -->        
+        <script src="libs/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="libs/popper/popper.min.js"></script>
+        <script src="libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
